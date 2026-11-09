@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  color: #fff;
+  font-family: monospace;
+}
+.hub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+}
+.hub-bar {
+  display: flex;
+  gap: 8px;
+}
+.hub-bar button {
+  padding: 6px 12px;
+  font: inherit;
+  font-weight: bold;
+  color: #000;
+  background: #ffd400;
+  border: 2px solid #ffd400;
+  cursor: pointer;
+}
+.hub-message {
+  min-height: 1.2em;
+  color: #ff6b6b;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+
+canvas {
+  border: 2px solid #333;
+  max-width: 100%;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Login */
+.login-screen {
+  color: #fff;
+  font-family: monospace;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 300px;
+  padding: 24px;
+  border: 2px solid #333;
+  background: #000;
+}
+
+.login-form h1 {
+  margin: 0;
+  text-align: center;
+  color: #ffd400;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.login-form input {
+  padding: 8px;
+  font: inherit;
+  color: #fff;
+  background: #111;
+  border: 2px solid #666;
+}
+
+.login-form button {
+  padding: 10px;
+  font: inherit;
+  font-weight: bold;
+  color: #000;
+  background: #ffd400;
+  border: 2px solid #ffd400;
+  cursor: pointer;
+}
+
+.login-error {
+  min-height: 1.2em;
+  color: #ff6b6b;
+}
+
+/* Indicador de foco visible (amarillo sobre fondo oscuro, contraste > 3:1) */
+:focus-visible {
+  outline: 3px solid #ffd400;
+  outline-offset: 2px;
+}

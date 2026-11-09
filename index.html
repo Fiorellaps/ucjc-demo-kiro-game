@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pac-Kiro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="login-screen" class="login-screen">
+      <form id="login-form" class="login-form" autocomplete="off" novalidate>
+        <h1>Pac-Kiro</h1>
+        <div class="field">
+          <label for="login-user">Usuario</label>
+          <input id="login-user" name="user" type="text" autocomplete="username" />
+        </div>
+        <div class="field">
+          <label for="login-pass">Contraseña</label>
+          <input id="login-pass" name="pass" type="password" autocomplete="current-password" />
+        </div>
+        <button type="submit" id="login-submit">Entrar</button>
+        <div id="login-error" class="login-error" role="alert"></div>
+      </form>
+    </section>
+    <main class="hub">
+      <div id="hub-bar" class="hub-bar" hidden>
+        <button type="button" id="btn-menu" hidden>Menú</button>
+        <button type="button" id="btn-logout">Cerrar sesión</button>
+      </div>
+      <div id="hub-message" class="hub-message" role="alert"></div>
+      <canvas id="game" aria-label="Game Hub" hidden></canvas>
+      <ul id="controls" class="controls" aria-label="Controles" hidden></ul>
+    </main>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
